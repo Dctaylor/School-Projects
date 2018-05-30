@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <meta charset="utf-8"/>
+    <title>Repair Job Update</title>
+  </head>
+  <body>
+    <button style = "height:40px;width:200px" onclick="history.go(-1);">Back To Dashboard</button>
+    <br> <br>
+
+    <form method="post" action="http://students.engr.scu.edu/~dtaylor/JobUpdate.php">
+      <fieldset>
+        <legend style="color:blue;font-size:30px">Repair Job Update</legend>
+
+        <label for="repairId">Repair Id:</label>
+        <input type="text" name="repairId" id="repairId">
+        <br>
+
+        <label for="newStatus">New Job Status (Under_Repair, Ready, or Done): (If status unchanged, enter "Unchanged")</label>
+        <input type="text" name="newStatus" id="newStatus">
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend style="color:blue;font-size:30px">Only input if setting Status to "Done"</legend>
+
+        <label for="pCosts">Parts Cost, If Applicable: (No $, 2 decimal places)</label>
+        <input type="text" name="pCosts" id="pCosts">
+        <br>
+
+        <label for="lHours">Labour Hours: (X Hours, Y Minutes)</label>
+        <input type="text" name="lHours" id="lHours">
+        <br>
+
+        <label for="currentTime">Current Time: (YYYY-MM-DD)</label>
+        <input type="text" name="currentTime" id="currneTime">
+
+      </fieldset>
+      <br>
+
+      <fieldset>
+        <legend style="color:blue;font-size:30px">Problems Found</legend>
+
+        <label for="problemCode1">Problem Code 1:</label>
+        <input type="text" name="problemCode1" id="problemCode1">
+        <br>
+
+        <label for="problemCode2">Problem Code 2:</label>
+        <input type="text" name="problemCode2" id="problemCode2">
+        <br>
+
+        <label for="problemCode3">Problem Code 3:</label>
+        <input type="text" name="problemCode3" id="problemCode3">
+        <br>
+
+        <label for="problemCode4">Problem Code 4:</label>
+        <input type="text" name="problemCode4" id="problemCode4">
+
+      </fieldset>
+    
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+      <?php if($_GET["noInfo"]) echo "Missing Info"; ?>
+      <?php if($_GET["wrongStatus"]) echo "Invalid Status"; ?>
+    </form>
+  </body>
+</html>

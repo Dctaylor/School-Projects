@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <meta charset="utf-8"/>
+    <title>Insert Customer and Machine Details</title>
+  </head>
+  <body>
+    <button style = "height:40px;width:200px" onclick="history.go(-1);">Back To Dashboard</button>
+    <br> <br>
+    
+    <form method="post" action="http://students.engr.scu.edu/~dtaylor/AcceptNewMachine.php">
+      <fieldset>
+        <legend style="color:blue;font-size:30px">Customer Info</legend>
+
+        <label for="customerName">Full Name:</label>
+        <input type="text" name="customerName" id="customerName">
+        <br>
+
+        <label for="contactInfo">Email or Phone Number:</label>
+        <input type="text" name="contactInfo" id="contactInfo">
+        <br>
+
+        <label for="contractId">Service Contract Id: (optional)</label>
+        <input type="text" name="contractId" id="contractId">
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend style="color:blue;font-size:30px">Machine Info</legend>
+
+        <label for="Printer">Printer</label>
+        <input type="radio" name="type" id="Printer" value="Printer">
+
+        <label for="Computer">Computer</label>
+        <input type="radio" name="type" id="Computer" value="Computer">
+        <br>
+
+        <label for="model">Machine Model:</label>
+        <input type="text" name="model" id="model">
+        <br>
+
+        <label for="year">Machine Model Year:</label>
+        <input type="text" name="year" id="year">
+      </fieldset>
+    
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+      <?php if($_GET["noInfo"]) echo "Missing Info other than Contract Id";
+      if($_GET["badInfo"]) echo "Invalid Input for Printer or Computer"; ?>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <meta charset="utf-8"/>
+    <title>Revenue Generated</title>
+  </head>
+  <body>
+    <button style = "height:40px;width:200px" onclick="history.go(-1);">Back To Dashboard</button>
+    <br> <br>
+    
+    <form method="post" action="http://students.engr.scu.edu/~dtaylor/generateRevenue.php">
+      <fieldset>
+        <legend style="color:blue;font-size:30px">Between These Dates</legend>
+
+        <label for="dtartDate">Start Date: (YYYY-MM-DD)</label>
+        <input type="text" name="startDate" id="startDate">
+        <br>
+        
+        <label for="enddate">End Date: (YYYY-MM-DD)</label>
+        <input type="text" name="endDate" id="endDate">
+      </fieldset>
+    
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+      <?php if($_GET["noInfo"]) echo "Missing Info"; ?>
+    </form>
+  </body>
+</html>

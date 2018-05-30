@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <meta charset="utf-8"/>
+    <title>Machine Status Check</title>
+  </head>
+  <body>
+    <button style = "height:40px;width:200px" onclick="history.go(-1);">Back To Dashboard</button>
+    <br> <br>
+    
+    <form method="post" action="http://students.engr.scu.edu/~dtaylor/MachineStatus.php">
+      <fieldset>
+        <legend style="color:blue;font-size:30px">Enter Either Repair Id or Phone Number/Email Address</legend>
+
+        <label for="repairId">Repair Id:</label>
+        <input type="text" name="repairId" id="repairId">
+        <br>
+
+        <label for="contactInfo">Email or Phone Number:</label>
+        <input type="text" name="contactInfo" id="contactInfo">
+      </fieldset>
+    
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+      <?php if($_GET["noInfo"]) echo "No Input Given"; ?>
+
+    </form>
+  </body>
+</html>
