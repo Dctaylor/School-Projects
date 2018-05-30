@@ -1,0 +1,186 @@
+h3 {
+	font-family: "Arial";
+	margin-bottom: 0px;
+}
+
+p {
+	font-family: "Arial";
+	margin-top: 5px;
+}
+
+#navOn {
+	display:none;
+	
+}
+#navOff {
+	display:none;
+}
+
+.closebtn {
+	display: none;
+}
+
+.overlay {
+	overflow: hidden;
+	background-color: black;
+	padding: 8px 0px 8px 0px;
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+	width: auto;
+}
+
+.overlay-content a{
+	color: white;
+	padding: 12px 15px;
+	text-decoration: none;
+	font-size: 14px;
+	margin: 5px 5px;
+	font-family: "Arial";
+}
+
+.overlay a:hover {
+	color: #d1de44;
+}
+
+
+#logo {
+	border: 0px;
+	padding: 0px 0px 0px 0px;
+	margin: 15px 0px 0px 40px;
+}
+
+#mainImage {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	border-style:solid;
+	border-width: 1px;
+	border-color: white;
+}
+
+#mainImageBox {
+	background-color: rgb(180,180,180);
+	padding-top: 26px;
+	padding-bottom: 26px;
+	margin-bottom: 30px;
+}
+
+#greyrectangleright {
+	z-index: 1;
+	position: absolute;
+
+	top: 50%;
+	transform: translate(0%, -50%);
+
+	right:0.6%;
+	width: 30px;
+	height: 130px;
+	background: grey;
+}
+
+#greyrectangleleft {
+	z-index: 1;
+	position: absolute;
+
+	top: 50%;
+	transform: translate(0%, -50%);
+
+	left: auto;
+	width: 30px;
+	height: 130px;
+	background: grey;
+}
+
+#mainBody {
+	display: table;
+}
+
+
+#sideBox {
+	width: 25%;
+	background-color: rgb(241,241,241);
+	font-size: 14px;
+	padding-right: 10px;
+	height: auto;
+	float: left;
+	margin-bottom: 15px;
+	margin-left: 20px;
+
+}
+
+#sideText {
+	padding-left: 10px;
+}
+
+#sideHeader {
+	text-align: center;
+	margin-bottom:0px;
+}
+
+#bottomline {
+	z-index: 1;
+	position: absolute;
+
+	margin-right: 5%;
+	width: 25.5%;
+	height: 7px;
+	background: lightgrey;
+}
+
+.column {
+	float: left;
+	width: 30%;
+	height: auto;
+	margin-right: 15px;
+	margin-left: 20px;
+	font-size: 14px;
+
+}
+
+#bottom {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+}
+#bottomNav {
+	font-family:"Arial";
+	text-align: center;
+	color: grey;
+	margin: 0px;
+	border: 0px;
+	padding-top: 5px;
+	padding-bottom: 30px;
+}
+
+#bottomNav a {
+	text-align: center;
+		color: grey;
+		text-decoration: none;
+		font-size: 12px;
+		font-family:"Arial";
+		margin-left:10px;
+		margin-right: 10px;
+}
+
+#bottomNav a:hover {
+	background-color: black;
+	color: #d1de44;
+}
+
+#trapezoid {
+	z-index: 1;
+	position: relative;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+
+	border-top: 30px solid white;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+
+	height: 0px;
+	width: 70%;
+}
+
